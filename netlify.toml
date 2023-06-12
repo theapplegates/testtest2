@@ -1,0 +1,20 @@
+# Netlify Build Configuration
+
+# Output directory and 11ty build command
+[build]
+  publish = "_site"
+  command = "eleventy"
+
+# Cache generated content between builds (e.g. images)
+# https://github.com/jakejarvis/netlify-plugin-cache
+[[plugins]]
+package = "netlify-plugin-cache"
+
+  # Path to the 11ty cache folder
+  [plugins.inputs]
+  paths = [ ".cache" ]
+
+# Be aware that if you have conflicting configuration values, settings specified in
+# netlify.toml override any corresponding settings in the Netlify UI.
+
+# https://www.netlify.com/docs/netlify-toml-reference/

@@ -1,0 +1,6 @@
+# Site settings
+# YAML cheat sheet: https://quickref.me/yaml
+
+title: "Living Life"
+description: "My life. My opinions."
+url: "https://sveltia-blog.paulapplegate.com"
